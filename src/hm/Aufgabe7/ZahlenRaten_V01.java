@@ -1,8 +1,8 @@
-package hm.Aufgabe2;
+package hm.Aufgabe7;
 
 import java.util.Scanner;
 
-public class ForSchleife {
+public class ZahlenRaten_V01 {
 
     private static int random = (int) (Math.random() * 10);
 
