@@ -1,5 +1,8 @@
 package hm.Aufgabe2;
 
+/**
+ * @author Stefan Lutsch
+ */
 public class Book {
 
     private String title; // Title als String

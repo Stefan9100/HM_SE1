@@ -2,6 +2,9 @@ package hm.Aufgabe5;
 
 import java.util.Scanner;
 
+/**
+ * @author Stefan Lutsch
+ */
 public class SayHello {
 
     public void sayHello(int n, String name){
@@ -15,6 +18,8 @@ public class SayHello {
         System.out.println("Bitte geben Sie den gewünschten Namen ein.");
         String insertedName = scan.nextLine();
         return insertedName;
+        //eleganter (Redundanz vermeiden)
+        // return scan.nextLine();
     }
 
     public static void main(String[] args) {

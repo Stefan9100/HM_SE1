@@ -2,7 +2,9 @@ package hm.Aufgabe4;
 
 import java.util.Scanner;
 
-public class Lohnsteuerverein {
+/**
+ * @author Stefan Lutsch
+ */public class Lohnsteuerverein {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
         System.out.println("Bitte geben Sie ihr Gehalt ein.");

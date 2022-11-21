@@ -2,26 +2,33 @@ package hm.Aufgabe7;
 
 import java.util.Scanner;
 
+/**
+ * @author Stefan Lutsch
+ */
 public class ZahlenRaten_V01 {
 
     private static int random = (int) (Math.random() * 10);
 
     public static void main(String[] args) {
+        ZahlenRaten_V01 zahlenRaten_v01 = new ZahlenRaten_V01();
+        zahlenRaten_v01.zahlenRaten();
 
-       /* for(int i=5; i<=15;i=i+2){
-            System.out.println("Ausgabe "+i);
-        }*/
+    }
 
+    public void zahlenRaten() {
         Scanner in = new Scanner(System.in);
-        for (int i =0; i<3; i++){
-            System.out.println("Bitte geben Sie eine Zahl ein!");
-            int guess=in.nextInt();
-            if(guess == random){
-                System.out.println("Juhu Die Zahl ist richtig");
-                break;
-            }else{
-                System.out.println("Leider falsch. Bitte neu raten");
-            }
+        System.out.println("Bitte geben Sie eine Zahl zwischen 1 und 10 ein!");
+        int guess = in.nextInt();
+        //Prüfung ob Zahl im richtigen Interval liegt
+        while (guess < 1 || guess > 10) {
+            System.out.println("Bitte Zahl zwischen 1 und 10");
+            guess = in.nextInt();
+        }
+        if (guess == random) {
+            System.out.println("Juhu Die Zahl ist richtig");
+        } else {
+            System.out.println("Leider falsch. Bitte neu raten");
+
 
         }
     }
